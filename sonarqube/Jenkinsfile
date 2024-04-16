@@ -1,5 +1,5 @@
 node {
-    def myGradleContainer = docker.image('gradle:jdk8:sha256:42873dc881526c18e3a0b0cd12f9f7dbb6168f56d1303fe41387572f3269dfc6')
+    def myGradleContainer = docker.image('gradle:jdk8sha256:42873dc881526c18e3a0b0cd12f9f7dbb6168f56d1303fe41387572f3269dfc6')
     myGradleContainer.pull()
 
     stage('Preparación') {
